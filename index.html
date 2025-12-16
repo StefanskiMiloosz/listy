@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Stylizacja List CSS</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f9; }
+        h1, h2 { color: #2c3e50; }
+        
+        ul {
+            margin: 15px 0 30px 0;
+            padding-left: 30px;
+            border: 3px solid; 
+            border-radius: 8px;
+            padding: 15px 15px 15px 45px;
+            list-style-position: outside;
+            background-color: #ffffff;
+        }
+        li {
+            padding: 5px 0;
+            line-height: 1.5;
+        }
+
+
+        .type-disc { list-style-type: disc; border-color: #3498db; }
+        .type-disc li { color: #2980b9; }
+
+        .type-circle { list-style-type: circle; border-color: #2ecc71; }
+        .type-circle li { color: #27ae60; }
+
+        .type-square { list-style-type: square; border-color: #e74c3c; }
+        .type-square li { color: #c0392b; }
+        .list-image {
+            list-style-image: url( 'QDH.png'); 
+            list-style-type: none;
+            border-color: #9b59b6;
+        }
+        .list-image li { color: #8e44ad; }
+
+        .pos-inside { list-style-type: square; list-style-position: inside; border-color: #f1c40f; }
+        .pos-inside li { color: #f39c12; }
+
+        .pos-outside { list-style-type: circle; list-style-position: outside; border-color: #1abc9c; }
+        .pos-outside li { color: #16a085; }
+
+        .list-none {
+            list-style-type: none;
+            padding-left: 15px; 
+            border-color: #e67e22;
+        }
+        .list-none li { color: #d35400; }
+
+
+        .list-shorthand {
+            list-style: square inside url(' QDH.png'); 
+            border-color: #34495e;
+        }
+        .list-shorthand li { color: #2c3e50; }
+        
+    </style>
+</head>
+<body>
+
+    <h1>Wizualizacja Stylizacji List CSS</h1>
+
+    <h2>1. Różne Typy</h2>
+    
+    <ul class="type-disc">
+        <li>Punktor: DISK</li>
+        <li>Element z kolorem tekstu.</li>
+    </ul>
+
+    <ul class="type-circle">
+        <li>Punktor: CIRCLE</li>
+        <li>Element z kolorem tekstu.</li>
+    </ul>
+    
+    <ul class="type-square">
+        <li>Punktor: SQUARE</li>
+        <li>Element z kolorem tekstu.</li>
+    </ul>
+
+    <h2>2. Punktor jako ZDJĘCIE</h2>
+    <ul class="list-image">
+        <li>Punktor zastąpiony ikoną.</li>
+        <li>Drugi element.</li>
+    </ul>
+
+    <h2>3. Pozycja</h2>
+    
+    <ul class="pos-inside">
+        <li>Pozycja: INSIDE. Długi tekst zawija się POD punktor.</li>
+        <li>Kolejny element.</li>
+    </ul>
+
+    <ul class="pos-outside">
+        <li>Pozycja: OUTSIDE. Długi tekst zawija się na wysokości tekstu.</li>
+        <li>Kolejny element.</li>
+    </ul>
+
+    <h2>4. Lista BEZ Punktora</h2>
+    <ul class="list-none">
+        <li>Symbol usunięty.</li>
+        <li>Element listy w kolorze.</li>
+    </ul>
+
+    <h2>5. Skrócony Zapis (list-style)</h2>
+    <ul class="list-shorthand">
+        <li>Użyto skrótu.</li>
+        <li>Łączy w jednej linii typ, pozycję i obraz.</li>
+    </ul>
+
+</body>
+</html> 
